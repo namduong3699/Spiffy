@@ -3,7 +3,7 @@ const instances = process.env.NODE_INSTANCES ? Number(process.env.NODE_INSTANCES
 module.exports = {
     apps: [
         {
-            name: 'viblo',
+            name: 'spiffy',
             script: './server/index.js',
             cwd: '/web',
             instances,

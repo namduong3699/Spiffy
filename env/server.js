@@ -30,7 +30,7 @@ const validEnv = cleanEnv(env, {
     }),
 
     SSO_NONCE_COOKIE: str({
-        default: 'viblo_session_nonce',
+        default: 'spiffy_session_nonce',
         desc: 'The cookie used to sync the log in session',
     }),
 
