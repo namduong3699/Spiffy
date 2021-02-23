@@ -1,0 +1,17 @@
+@import "./color";
+
+.app {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: $default;
+}
+
+.text-link {
+    text-decoration: none;
+    color: $gray;
+}
+
+.text-bold {
+    color: $gray-bold;
+}
+
+@import "./custom.scss"

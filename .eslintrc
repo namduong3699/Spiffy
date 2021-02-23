@@ -10,7 +10,7 @@
   "settings": {
     "import/resolver": {
       "alias": [
-        ["~", "./app"],
+        ["~", "./src"],
         ["@common", "./common"]
       ],
       "webpack": {}

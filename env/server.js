@@ -20,20 +20,6 @@ const validEnv = cleanEnv(env, {
         desc: 'API host for server requests',
     }),
 
-    SSO_HOST: str({
-        desc: 'SSO host',
-    }),
-
-    SSO_SERVER_HOST: url({
-        default: env.SSO_HOST,
-        desc: 'SSO host for server requests',
-    }),
-
-    SSO_NONCE_COOKIE: str({
-        default: 'spiffy_session_nonce',
-        desc: 'The cookie used to sync the log in session',
-    }),
-
     REDIS_HOST: host({
         default: '127.0.0.1',
         desc: 'Redis host',
@@ -57,9 +43,6 @@ export const {
     APP_KEY,
     APP_DEBUG,
     API_HOST,
-    SSO_HOST,
-    SSO_NONCE_COOKIE,
-    SSO_SERVER_HOST,
     REDIS_HOST,
     REDIS_PORT,
     REDIS_PASSWORD,

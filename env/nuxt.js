@@ -27,10 +27,6 @@ const validEnv = cleanEnv(process.env, {
         desc: 'API rewrite entrypoint',
     }),
 
-    SSO_HOST: str({
-        desc: 'SSO host',
-    }),
-
     IMAGE_BASE_URL: url({
         desc: 'Base url for images',
     }),
@@ -49,7 +45,6 @@ export const {
     HOST,
     PORT,
     API_BASE_URL,
-    SSO_HOST,
     IMAGE_BASE_URL,
     ANALYTICS_TRACK_ID,
     isDev,

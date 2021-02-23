@@ -9,7 +9,6 @@ import {
     HOST,
     PORT,
     APP_URL,
-    SSO_HOST,
     API_BASE_URL,
     IMAGE_BASE_URL,
     ANALYTICS_TRACK_ID,
@@ -32,13 +31,10 @@ export default {
     },
 
     env: {
-        SSO_HOST,
         APP_URL,
         API_BASE_URL,
         IMAGE_BASE_URL,
         ANALYTICS_TRACK_ID,
-        SSO_APP_URL: SSO_HOST,
-        SSO_IMAGES_URL: IMAGE_BASE_URL,
     },
 
     head: mergeWithArrayConcat({}, head, openGraph),
@@ -46,12 +42,13 @@ export default {
     css: [
         'tippy.js/themes/google.css',
         '@fortawesome/fontawesome-free/css/all.css',
-        '~/assets/styles/index.scss',
+        '~/assets/scss/index.scss',
     ],
 
     plugins: [
         '~/plugins/components',
         '~/plugins/directives',
+        '~/plugins/element-ui',
     ],
 
     // Auto import components (https://go.nuxtjs.dev/config-components)

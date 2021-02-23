@@ -1,0 +1,60 @@
+$success: #00cec9;
+$danger : #ff7675;
+$info   : #74b9ff;
+$warning: #fdcb6e;
+$default: #fff;
+
+$gray       : #c4c4c4;
+$gray-bold  : #2f303a;
+$gray-light : #f4f4f5;
+$orange     : #f2732c;
+$blue       : #3971dd;
+$blue-bold  : #2b56f8;
+$blue-light : #ecf2ff;
+$red        : #f26364;
+$red-bold   : #f02121;
+$yellow     : #ad8522;
+
+.bg-gray-bold {
+    background-color: $gray-bold;
+}
+
+.bg-gray-light {
+    background-color: $gray-light;
+}
+
+.bg-gray {
+    background-color: $gray;
+}
+
+.bg-blue-light {
+    background-color: $blue-light;
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-gray-bold {
+    color: $gray-bold;
+}
+
+.text-gray-light {
+    color: $gray-light;
+}
+
+.text-red {
+    color: $red;
+}
+
+.text-red-bold {
+    color: $red-bold;
+}
+
+.text-blue-bold {
+    color: $blue-bold;
+}
