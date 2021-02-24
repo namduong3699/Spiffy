@@ -4,7 +4,7 @@
             <img
                 v-for="item in 3"
                 :key="item"
-                src="~/assets/images/icon/round.png"
+                src="~/assets/images/Ellipse 19.png"
                 width="30"
                 class="mr-4"
             >

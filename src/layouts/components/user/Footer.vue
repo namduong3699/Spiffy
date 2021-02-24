@@ -4,13 +4,10 @@
             <div class="w-1/6 bg-gray-bold" />
             <div class="w-5/6 flex flex-col md:flex-row justify-between py-16 bg-gray-bold text-white">
                 <div class="w-full md:w-1/2 pr-24">
-                    <img
-                        src="~/assets/images/logo/spiffy.png"
-                        class="mb-4"
-                        alt="logo"
-                        width="180"
-                        height="60"
-                    >
+                    <div class="mb-4">
+                        <img src="~/assets/images/Polygon 1.png" alt="logo">
+                        <img src="~/assets/images/Spiffy-white.png" alt="logo">
+                    </div>
                     <p class="text-sm mb-4">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, sint placeat assumenda praesentium consectetur debitis similique optio nobis fugit vitae fugiat aliquid delectus quas, voluptatem quaerat facere velit a deserunt eveniet officiis atque nihil. Placeat neque, minima adipisci debitis obcaecati quos doloremque quas ipsa itaque. Veritatis repellat recusandae suscipit omnis!
                     </p>
@@ -69,7 +66,7 @@
                 </div>
                 <div class="w-1/2 text-right pr-8">
                     <span>Power by - </span>Corsource Technology Group LLC.
-                    <img src="~/assets/images/logo/corsource.png" alt="corsource" class="inline">
+                    <img src="~/assets/images/image-19.png" alt="corsource">
                 </div>
             </div>
         </div>

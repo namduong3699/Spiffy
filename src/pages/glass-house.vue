@@ -8,7 +8,7 @@
                 Glass house
             </div>
             <div class="py-4 px-12 ml-12 shadow-lg rounded-lg text-5xl">
-                <i class="far fa-envelope text-gray-bold" /><span class="text-red-bold font-bold"> 2</span>
+                <img src="~/assets/images/coolicon.png"><span class="text-red-bold font-bold"> 2</span>
             </div>
         </div>
         <div class="my-12 p-6 text-2xl rounded-lg bg-gray-light">
@@ -48,7 +48,7 @@
         <div class="mt-16 flex justify-around">
             <div class="w-4/12 shadow-lg rounded-lg p-8">
                 <img
-                    src="https://www.w3schools.com/howto/img_avatar.png"
+                    src="~/assets/images/Ellipse 68.png"
                     class="rounded-full mx-auto mb-8"
                     alt="avatar"
                     width="150"
@@ -83,7 +83,7 @@
             </div>
             <div class="w-5/12">
                 <div class="shadow-lg rounded-lg p-12">
-                    <script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/youtube.xml&amp;up_channel=BlvckvinesOfficial&amp;synd=open&amp;w=320&amp;h=390&amp;title=&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js" />
+                    <img src="~/assets/images/image 25.png">
                 </div>
                 <div class="flex justify-between mt-12 text-center">
                     <div class="w-5/12 shadow-lg rounded">
@@ -166,7 +166,7 @@
 
         <div>
             <div v-for="(item, index) in list" :key="index" class="my-16 font-bold text-xl">
-                <i :class="item.icon" class="mr-3 text-4xl" />{{ item.title }}
+                <img :src="require(`~/assets/images/${item.icon}.png`)">{{ item.title }}
             </div>
         </div>
     </div>

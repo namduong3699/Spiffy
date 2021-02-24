@@ -3,11 +3,10 @@
         <div class="flex justify-between">
             <div class="flex justify-center items-center">
                 <div class="text-center">
-                    <img
-                        src="~/assets/images/logo/spiffy-white.png"
-                        class="mb-4 w-full"
-                        alt="logo"
-                    >
+                    <div>
+                        <img src="~/assets/images/Polygon 1.png" alt="logo">
+                        <img src="~/assets/images/Spiffy.png" alt="logo">
+                    </div>
                     <div class="text-3xl">
                         clackacoug
                     </div>
@@ -16,7 +15,7 @@
                     </div>
                 </div>
                 <img
-                    src="https://www.w3schools.com/howto/img_avatar.png"
+                    src="~/assets/images/Ellipse 68.png"
                     class="rounded-full mx-auto mb-8 ml-6"
                     alt="avatar"
                     width="200"
@@ -24,12 +23,12 @@
             </div>
             <div class="flex items-center">
                 <img
-                    src="~/assets/images/qr/1.png"
+                    src="~/assets/images/image 34.png"
                     alt="logo"
                     class="w-40 h-40"
                 >
                 <img
-                    src="~/assets/images/qr/2.png"
+                    src="~/assets/images/image 34.png"
                     class="ml-4 w-40 h-40"
                     alt="logo"
                 >
@@ -51,10 +50,8 @@
                                 {{ index }}
                             </div>
                             <img
-                                src="~/assets/images/icon/spiffy.png"
+                                src="~/assets/images/Polygon 5.png"
                                 alt="logo"
-                                height="5"
-                                width="10"
                             >
                         </div>
                         <div class="mt-3">

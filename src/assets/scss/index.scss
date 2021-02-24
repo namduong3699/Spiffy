@@ -1,8 +1,30 @@
 @import "./color";
 
+@font-face {
+    font-family: Ubuntu;
+    src: url('./fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
 .app {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Ubuntu, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: $default;
+    font-size: 18px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-lg {
+    font-size: 24px;
+}
+
+.text-xl {
+    font-size: 36px;
+}
+
+.text-2xl {
+    font-size: 48px;
 }
 
 .text-link {

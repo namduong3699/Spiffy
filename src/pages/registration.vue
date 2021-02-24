@@ -4,7 +4,7 @@
             <div class="text-center mb-4">
                 Create your Free Account
             </div>
-            <img src="~/assets/images/register.jpg" alt="register">
+            <img src="~/assets/images/study.png" alt="study">
             <div class="mt-8">
                 <div class="ml-32">
                     No Obligation

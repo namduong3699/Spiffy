@@ -11,8 +11,9 @@
 
         <div class="mt-12">
             <div v-for="(item, index) in list" :key="index" class="my-32">
-                <div class="font-bold text-2xl">
-                    <i :class="item.icon" class="mr-3 text-4xl" />{{ item.title }}
+                <div class="flex items-center font-bold text-2xl">
+                    <img :src="require(`~/assets/images/${item.icon}.png`)" class="mr-3">
+                    <div>{{ item.title }}</div>
                 </div>
                 <div class="text-sm text-gray-700">
                     {{ item.content }}
