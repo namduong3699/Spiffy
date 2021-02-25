@@ -1,21 +1,40 @@
 <template>
     <div class="w-10/12 mx-auto">
         <div class="flex justify-between font-bold">
-            <div class="flex justify-between pr-64 w-8/12">
-                <div>Get Started</div>
-                <div>About Spiffy</div>
-                <div>YouTube</div>
-                <div>How the Sausage is Made</div>
+            <div class="flex justify-between pr-64 w-9/12">
+                <nuxt-link to="/about">
+                    Get Started
+                </nuxt-link>
+                <nuxt-link to="/about">
+                    About Spiffy
+                </nuxt-link>
+                <nuxt-link to="/about">
+                    YouTube
+                </nuxt-link>
+                <nuxt-link to="/about">
+                    How the Sausage is Made
+                </nuxt-link>
             </div>
-            <div class="w-3/12">
+            <div class="w-2/12 z-50">
                 <div>Login</div>
-                <el-input type="text" placeholder="email" class="mb-2" />
-                <el-input type="text" placeholder="password" />
+                <el-input
+                    v-model="email"
+                    type="text"
+                    placeholder="email"
+                    class="my-2"
+                    size="small"
+                />
+                <el-input
+                    v-model="password"
+                    placeholder="password"
+                    size="small"
+                    type="password"
+                />
             </div>
         </div>
 
-        <div class="py-64">
-            <div class="flex">
+        <div class="relative -mt-16">
+            <div class="flex pb-64 pt-56">
                 <img
                     src="~/assets/images/Polygon 1-1.png"
                     alt="logo"
@@ -28,6 +47,9 @@
                         Special Incentives For Funding YouTubers
                     </div>
                 </div>
+                <nuxt-link to="/community">
+                    <img src="~/assets/images/Group 65076.png" alt="avatar" class="absolute right-0 top-0">
+                </nuxt-link>
             </div>
         </div>
 
@@ -107,6 +129,13 @@
 <script>
     export default {
         layout: 'home',
+
+        data() {
+            return {
+                email: '',
+                password: '',
+            };
+        },
     };
 </script>
 

@@ -99,7 +99,7 @@
             </div>
         </div>
 
-        <div class="mb-12">
+        <div class="mb-12 mb-24">
             <div class="font-bold mb-2">
                 Why do YouTube Channels agree to give up 50% of their donations?
             </div>

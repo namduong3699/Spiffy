@@ -4,7 +4,7 @@
             <img src="~/assets/images/Polygon 1-1.png" style="height: 44px" class="mr-2">
             <img src="~/assets/images/Spiffy-white.png" style="height: 62px">
         </div>
-        <ul class="pt-32 pl-5">
+        <ul class="pt-32 pl-12">
             <li class="my-6">
                 <nuxt-link to="/">
                     <img

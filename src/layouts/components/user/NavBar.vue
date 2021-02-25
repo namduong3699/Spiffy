@@ -1,9 +1,9 @@
 <template>
     <div class="nav bg-gray-bold text-white p-4">
-        <div class="flex w-full p-3 mt-6">
+        <nuxt-link to="/" class="flex w-full p-3 mt-6">
             <img src="~/assets/images/Polygon 1.png" style="height: 41px" class="mr-2">
             <img src="~/assets/images/Spiffy-white.png" style="height: 57px">
-        </div>
+        </nuxt-link>
         <ul class="pt-32 pl-12">
             <li class="my-6">
                 <nuxt-link to="/">

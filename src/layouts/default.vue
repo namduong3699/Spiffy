@@ -3,7 +3,7 @@
         <div class="flex min-h-screen w-full">
             <NavBar class="w-1/6" />
             <el-main class="w-5/6">
-                <main>
+                <main style="min-height: 88vh">
                     <nuxt />
                 </main>
                 <el-footer class="custom-footer float-right">

@@ -1,5 +1,16 @@
 <template>
     <div class="m-12">
+        <div class="flex justify-end">
+            <div class="flex justify-end mb-4">
+                <img
+                    v-for="item in 3"
+                    :key="item"
+                    src="~/assets/images/Ellipse 19.png"
+                    width="30"
+                    class="mr-4"
+                >
+            </div>
+        </div>
         <div>
             <div class="text-3xl font-bold">
                 Universal Link Page

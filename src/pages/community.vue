@@ -19,12 +19,14 @@
                         B-JW6-RL9-BA2
                     </div>
                 </div>
-                <img
-                    src="~/assets/images/Ellipse 68.png"
-                    class="rounded-full mx-auto mb-8 ml-6"
-                    alt="avatar"
-                    style="height: 250px"
-                >
+                <nuxt-link to="/glass-house">
+                    <img
+                        src="~/assets/images/Ellipse 68.png"
+                        class="rounded-full mx-auto mb-8 ml-6"
+                        alt="avatar"
+                        style="height: 250px"
+                    >
+                </nuxt-link>
             </div>
             <div class="flex items-center">
                 <img
@@ -46,10 +48,10 @@
                 Current month - combined viral growth stastics - one column
             </div>
             <div class="mt-10">
-                <div class="capitalize text-gray-700 text-lg">
+                <div class="capitalize text-gray-700 text-lg pl-16">
                     Total Possible Viral Group People
                 </div>
-                <div class="flex justify-around items-center p-4 rounded-lg shadow-lg text-lg">
+                <div class="flex justify-between items-center py-4 px-16 rounded-lg shadow-lg text-lg">
                     <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
                         <div class="flex items-center">
                             <div class="text-xs font-normal mr-1">
@@ -75,10 +77,10 @@
             </div>
 
             <div class="mt-10">
-                <div class="capitalize text-gray-700 text-lg">
+                <div class="capitalize text-gray-700 text-lg pl-16">
                     Your Actual Viral Group People
                 </div>
-                <div class="flex justify-around items-center p-4 rounded-lg shadow-lg text-lg">
+                <div class="flex justify-between items-center py-4 px-16 rounded-lg shadow-lg text-lg">
                     <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
                         <div class="flex items-center">
                             <div class="text-xs font-normal mr-1">
@@ -104,10 +106,10 @@
             </div>
 
             <div class="mt-10">
-                <div class="capitalize text-gray-700 text-lg">
+                <div class="capitalize text-gray-700 text-lg pl-16">
                     Percentage of each level filled
                 </div>
-                <div class="flex justify-around items-center p-4 rounded-lg shadow-lg text-lg">
+                <div class="flex justify-between items-center py-4 px-16 rounded-lg shadow-lg text-lg">
                     <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
                         <div class="flex items-center">
                             <div class="text-xs font-normal mr-1">
@@ -133,10 +135,10 @@
             </div>
 
             <div class="mt-10">
-                <div class="capitalize text-gray-700 text-lg">
+                <div class="capitalize text-gray-700 text-lg pl-16">
                     Token Rewards per each level - listed in actual value of your local denomination
                 </div>
-                <div class="flex justify-around items-center p-4 rounded-lg shadow-lg text-lg">
+                <div class="flex justify-between items-center py-4 px-16 rounded-lg shadow-lg text-lg">
                     <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
                         <div class="flex items-center">
                             <div class="text-xs font-normal mr-1">

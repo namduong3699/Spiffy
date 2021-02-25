@@ -4,7 +4,7 @@
             <div class="flex flex-col justify-between w-full md:w-1/2">
                 <div class="flex items-center">
                     <img src="~/assets/images/Polygon 1-1.png" style="height: 73px" class="mr-2">
-                    <img src="~/assets/images/Spiffy-white.png" style="height: 120px">
+                    <img src="~/assets/images/Spiffy-white.png" style="height: 100px">
                 </div>
                 <ul class="pl-6">
                     <li class="p-1">

@@ -40,10 +40,10 @@
                     Disclaimers
                 </div>
                 <div class="mt-6">
-                    Disclaimer #1 - Spiffy is a social media theorybeing played out. The objective is to increase the percentage of financial donations to YouTube Channels. These Channels bring excellent entertainment value - but are not compensated in a sustainable amount according to traditional values. The theory is - if you include the public in the financial benefit of the donation process - the number of donations will increase exponentially - thereby increasing the take by the channels as a whole.
+                    Disclaimer #1 - Spiffy is a social media theorybeing played out. <span class="text-gold">The objective is to increase the percentage of financial donations to YouTube Channels.</span> These Channels bring excellent entertainment value - but are not compensated in a sustainable amount according to traditional values. The theory is - if you include the public in the financial benefit of the donation process - the number of donations will increase exponentially - thereby increasing the take by the channels as a whole.
                 </div>
                 <div class="mt-6">
-                    Disclaimer #2 - Spiffy is not a substitution for a job or education. It is not a retirement account. Spiffy is a $5 monthly donation to a YouTube Channel. If you cannot afford $5 a month - you should not participate - there is no guarantee of reward - play with the intention of helping others - be grateful if you are the recipiant of a financial reward as well.
+                    Disclaimer #2 - Spiffy is not a substitution for a job or education. It is not a retirement account. Spiffy is a $5 monthly donation to a YouTube Channel. If you cannot afford $5 a month - you should not participate - <span class="text-gold">there is no guarantee of reward</span> - play with the intention of helping others - be grateful if you are the recipiant of a financial reward as well.
                 </div>
             </div>
         </div>

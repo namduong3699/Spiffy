@@ -1,13 +1,19 @@
 <template>
-    <div class="m-12">
-        <div class="text-right">
-            ...
+    <div class="m-12 relative">
+        <div class="flex justify-end mt-8">
+            <img
+                v-for="item in 3"
+                :key="item"
+                src="~/assets/images/Ellipse 19.png"
+                width="30"
+                class="mr-4"
+            >
         </div>
         <div class="flex">
-            <div class="w-1/2 uppercase font-bold text-gray text-2xl shadow-2xl rounded-2xl p-4">
+            <div class="w-1/2 uppercase font-bold text-gray text-2xl shadow-xl rounded-2xl p-4">
                 Glass house
             </div>
-            <div class="flex items-center py-4 px-12 ml-12 shadow-2xl rounded-2xl text-2xl">
+            <div class="flex items-center py-4 px-12 ml-12 shadow-xl rounded-2xl text-2xl">
                 <img src="~/assets/images/coolicon.png" style="height: 48px"><span class="text-red-bold font-bold ml-2"> 2</span>
             </div>
         </div>
@@ -40,19 +46,22 @@
                 <div
                     v-for="index in 24"
                     :key="index"
-                    class="bg-gray h-12 flex-grow"
+                    class="bg-gray flex-grow"
                     :class="{ 'bg-orange': index === 1, 'ml-3': index !== 1 }"
+                    style="height: 60px"
                 />
             </div>
         </div>
         <div class="mt-16 flex justify-around">
             <div class="flex flex-col justify-center w-4/12 shadow-2xl rounded-2xl p-8">
-                <img
-                    src="~/assets/images/Ellipse 68.png"
-                    class="rounded-full mx-auto mb-8"
-                    alt="avatar"
-                    style="height: 200px"
-                >
+                <nuxt-link to="community">
+                    <img
+                        src="~/assets/images/Ellipse 68.png"
+                        class="rounded-full mx-auto mb-8"
+                        alt="avatar"
+                        style="height: 200px"
+                    >
+                </nuxt-link>
                 <div class="text-center text-lg">
                     <div class="mb-5">
                         clackacoug
@@ -89,7 +98,7 @@
                     <img src="~/assets/images/image 25.png" style="height: 325px" class="mx-auto">
                 </div>
                 <div class="flex justify-between mt-12 text-center">
-                    <div class="w-5/12 shadow-2xl rounded-2xl">
+                    <div class="w-5/12 shadow-2xl rounded-2xl py-2">
                         <div class="bg-gray-bold text-white rounded-2xl py-1">
                             30 Day Trends
                         </div>
@@ -126,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-5/12 shadow-2xl rounded">
+                    <div class="w-5/12 shadow-2xl rounded-2xl py-2">
                         <div class="bg-gray-bold text-white rounded-2xl py-1">
                             30 Day Trends
                         </div>
@@ -177,6 +186,8 @@
                 </div>
             </div>
         </div>
+
+        <img src="~/assets/images/image 34.png" alt="qr" class="absolute bottom-0 right-0">
     </div>
 </template>
 
