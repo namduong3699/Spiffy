@@ -1,27 +1,25 @@
 <template>
     <div class="nav bg-gray-bold text-white p-4">
-        <div class="flex w-full p-3 mt-6">
+        <nuxt-link to="/" class="flex w-full p-3 mt-6">
             <img src="~/assets/images/Polygon 1-1.png" style="height: 44px" class="mr-2">
             <img src="~/assets/images/Spiffy-white.png" style="height: 62px">
-        </div>
+        </nuxt-link>
         <ul class="pt-32 pl-12">
-            <li class="my-6">
-                <nuxt-link to="/">
-                    <img
-                        src="~/assets/images/Polygon 1-1.png"
-                        alt="menu-icon"
-                        style="height: 23px"
-                        class="inline mr-2"
-                    > Home
-                </nuxt-link>
-            </li>
             <li class="my-6">
                 <nuxt-link to="/glass-house">
                     <img
+                        v-if="isActive('/glass-house')"
+                        src="~/assets/images/Polygon 2-blue-2.png"
+                        alt="menu-icon"
+                        class="inline mr-2"
+                        style="height: 23px"
+                    >
+                    <img
+                        v-else
                         src="~/assets/images/Polygon 1-1.png"
                         alt="menu-icon"
-                        style="height: 23px"
                         class="inline mr-2"
+                        style="height: 23px"
                     > Glass House
                 </nuxt-link>
             </li>
@@ -68,10 +66,18 @@
             <li class="my-4">
                 <nuxt-link to="/about">
                     <img
+                        v-if="isActive('/about')"
+                        src="~/assets/images/Polygon 2-blue-2.png"
+                        alt="menu-icon"
+                        class="inline mr-2"
+                        style="height: 23px"
+                    >
+                    <img
+                        v-else
                         src="~/assets/images/Polygon 1-1.png"
                         alt="menu-icon"
-                        style="height: 23px"
                         class="inline mr-2"
+                        style="height: 23px"
                     > About Spiffy
                 </nuxt-link>
             </li>
@@ -81,25 +87,9 @@
 
 <script>
     export default {
-        data() {
-            return {
-                active: this.$route.path,
-            };
-        },
-
-        watch: {
-            '$route.path': 'setActiveItem',
-        },
-
-        mounted() {
-            this.setActiveItem();
-        },
-
         methods: {
-            setActiveItem() {
-            //     const activeItem = _findKey(this.$refs.menu.items, (_, key) => this.$route.path.startsWith(key));
-
-            //     this.active = activeItem;
+            isActive(route) {
+                return route === this.$route.path;
             },
         },
     };

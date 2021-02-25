@@ -52,7 +52,7 @@
                     Total Possible Viral Group People
                 </div>
                 <div class="flex justify-between items-center py-4 px-16 rounded-lg shadow-lg text-lg">
-                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
+                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between items-center">
                         <div class="flex items-center">
                             <div class="text-xs font-normal mr-1">
                                 {{ index }}
@@ -63,13 +63,13 @@
                                 style="height: 14px"
                             >
                         </div>
-                        <div class="mt-3">
+                        <div class="mt-5">
                             {{ Math.floor(Math.random()*100) }}
                         </div>
                     </div>
                     <div class="flex flex-col justify-between items-center">
                         <div>Total</div>
-                        <div class="mt-3">
+                        <div class="mt-2">
                             {{ Math.floor(Math.random()*100) }}
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                     Your Actual Viral Group People
                 </div>
                 <div class="flex justify-between items-center py-4 px-16 rounded-lg shadow-lg text-lg">
-                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
+                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between items-center">
                         <div class="flex items-center">
                             <div class="text-xs font-normal mr-1">
                                 {{ index }}
@@ -92,13 +92,13 @@
                                 style="height: 14px"
                             >
                         </div>
-                        <div class="mt-3">
+                        <div class="mt-5">
                             {{ Math.floor(Math.random()*100) }}
                         </div>
                     </div>
                     <div class="flex flex-col justify-between items-center">
                         <div>Total</div>
-                        <div class="mt-3">
+                        <div class="mt-2">
                             {{ Math.floor(Math.random()*100) }}
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                     Percentage of each level filled
                 </div>
                 <div class="flex justify-between items-center py-4 px-16 rounded-lg shadow-lg text-lg">
-                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
+                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between items-center">
                         <div class="flex items-center">
                             <div class="text-xs font-normal mr-1">
                                 {{ index }}
@@ -121,13 +121,13 @@
                                 style="height: 14px"
                             >
                         </div>
-                        <div class="mt-3">
+                        <div class="mt-5">
                             {{ Math.floor(Math.random()*100) }}
                         </div>
                     </div>
                     <div class="flex flex-col justify-between items-center">
                         <div>Total</div>
-                        <div class="mt-3">
+                        <div class="mt-2">
                             {{ Math.floor(Math.random()*100) }}
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                     Token Rewards per each level - listed in actual value of your local denomination
                 </div>
                 <div class="flex justify-between items-center py-4 px-16 rounded-lg shadow-lg text-lg">
-                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
+                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between items-center">
                         <div class="flex items-center">
                             <div class="text-xs font-normal mr-1">
                                 {{ index }}
@@ -150,13 +150,13 @@
                                 style="height: 14px"
                             >
                         </div>
-                        <div class="mt-3">
+                        <div class="mt-5">
                             {{ Math.floor(Math.random()*100) }}
                         </div>
                     </div>
                     <div class="flex flex-col justify-between items-center">
                         <div>Total</div>
-                        <div class="mt-3">
+                        <div class="mt-2">
                             {{ Math.floor(Math.random()*100) }}
                         </div>
                     </div>

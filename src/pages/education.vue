@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="w-full flex justify-center m-12 font-bold">
-            <div class="pt-12">
+            <div class="pt-24">
                 <div class="text-xl font-bold">
                     Spiffy - Special Incentives for Funding YouTubes
                 </div>

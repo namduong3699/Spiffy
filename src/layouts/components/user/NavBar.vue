@@ -4,20 +4,18 @@
             <img src="~/assets/images/Polygon 1.png" style="height: 41px" class="mr-2">
             <img src="~/assets/images/Spiffy-white.png" style="height: 57px">
         </nuxt-link>
-        <ul class="pt-32 pl-12">
-            <li class="my-6">
-                <nuxt-link to="/">
-                    <img
-                        src="~/assets/images/Polygon 2.png"
-                        alt="menu-icon"
-                        class="inline mr-2"
-                        style="height: 23px"
-                    > Home
-                </nuxt-link>
-            </li>
+        <ul ref="menu" class="pt-32 pl-12">
             <li class="my-6">
                 <nuxt-link to="/glass-house">
                     <img
+                        v-if="isActive('/glass-house')"
+                        src="~/assets/images/Polygon 2-blue.png"
+                        alt="menu-icon"
+                        class="inline mr-2"
+                        style="height: 23px"
+                    >
+                    <img
+                        v-else
                         src="~/assets/images/Polygon 2.png"
                         alt="menu-icon"
                         class="inline mr-2"
@@ -28,6 +26,14 @@
             <li class="my-6">
                 <nuxt-link to="/registration">
                     <img
+                        v-if="isActive('/registration')"
+                        src="~/assets/images/Polygon 2-blue.png"
+                        alt="menu-icon"
+                        class="inline mr-2"
+                        style="height: 23px"
+                    >
+                    <img
+                        v-else
                         src="~/assets/images/Polygon 2.png"
                         alt="menu-icon"
                         class="inline mr-2"
@@ -38,6 +44,14 @@
             <li class="my-6">
                 <nuxt-link to="/education">
                     <img
+                        v-if="isActive('/education')"
+                        src="~/assets/images/Polygon 2-blue.png"
+                        alt="menu-icon"
+                        class="inline mr-2"
+                        style="height: 23px"
+                    >
+                    <img
+                        v-else
                         src="~/assets/images/Polygon 2.png"
                         alt="menu-icon"
                         class="inline mr-2"
@@ -48,6 +62,14 @@
             <li class="my-6">
                 <nuxt-link to="/faq">
                     <img
+                        v-if="isActive('/faq')"
+                        src="~/assets/images/Polygon 2-blue.png"
+                        alt="menu-icon"
+                        class="inline mr-2"
+                        style="height: 23px"
+                    >
+                    <img
+                        v-else
                         src="~/assets/images/Polygon 2.png"
                         alt="menu-icon"
                         class="inline mr-2"
@@ -58,6 +80,14 @@
             <li class="my-6">
                 <nuxt-link to="/community">
                     <img
+                        v-if="isActive('/community')"
+                        src="~/assets/images/Polygon 2-blue.png"
+                        alt="menu-icon"
+                        class="inline mr-2"
+                        style="height: 23px"
+                    >
+                    <img
+                        v-else
                         src="~/assets/images/Polygon 2.png"
                         alt="menu-icon"
                         class="inline mr-2"
@@ -68,6 +98,14 @@
             <li class="my-6">
                 <nuxt-link to="/about">
                     <img
+                        v-if="isActive('/about')"
+                        src="~/assets/images/Polygon 2-blue.png"
+                        alt="menu-icon"
+                        class="inline mr-2"
+                        style="height: 23px"
+                    >
+                    <img
+                        v-else
                         src="~/assets/images/Polygon 2.png"
                         alt="menu-icon"
                         class="inline mr-2"
@@ -81,25 +119,9 @@
 
 <script>
     export default {
-        data() {
-            return {
-                active: this.$route.path,
-            };
-        },
-
-        watch: {
-            '$route.path': 'setActiveItem',
-        },
-
-        mounted() {
-            this.setActiveItem();
-        },
-
         methods: {
-            setActiveItem() {
-            //     const activeItem = _findKey(this.$refs.menu.items, (_, key) => this.$route.path.startsWith(key));
-
-            //     this.active = activeItem;
+            isActive(route) {
+                return route === this.$route.path;
             },
         },
     };

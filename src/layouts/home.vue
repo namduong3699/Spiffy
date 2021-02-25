@@ -1,6 +1,8 @@
 <template>
-    <el-container class="app">
-        <div class="flex justify-end mt-8 mr-24">
+    <el-container class="app relative">
+        <div class="h-8 bg-gray-dark" />
+        <div class="h-8 bg-gray-light" />
+        <div class="absolute flex justify-end" style="top: 16px; right: 16px">
             <img
                 v-for="item in 3"
                 :key="item"

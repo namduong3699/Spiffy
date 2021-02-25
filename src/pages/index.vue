@@ -1,7 +1,7 @@
 <template>
     <div class="w-10/12 mx-auto">
         <div class="flex justify-between font-bold">
-            <div class="flex justify-between pr-64 w-9/12">
+            <div class="flex justify-between w-8/12 xl:w-6/12">
                 <nuxt-link to="/about">
                     Get Started
                 </nuxt-link>
@@ -47,17 +47,18 @@
                         Special Incentives For Funding YouTubers
                     </div>
                 </div>
-                <nuxt-link to="/community">
-                    <img src="~/assets/images/Group 65076.png" alt="avatar" class="absolute right-0 top-0">
-                </nuxt-link>
+                <a href="https://www.youtube.com/channel/UC8j1hO8ZsIUh_zInUtcSclw" target="_blank">
+                    <img src="~/assets/images/Group 65076.png" alt="avatar" class="absolute right-0 top-0 md:w-7/12">
+                </a>
             </div>
         </div>
 
-        <div class="flex justify-between mb-32">
+        <div class="flex justify-between items-center mb-32">
             <img
                 src="~/assets/images/image 1.png"
                 alt="youtube"
                 style="height: 273px"
+                class="mr-4"
             >
             <div class="w-8/12">
                 <div class="text-xl font-bold">
@@ -72,7 +73,7 @@
             </div>
         </div>
 
-        <div class="flex justify-between bg-gray rounded-2xl overflow-hidden py-16 px-32 mb-32">
+        <div class="flex justify-between items-center bg-gray rounded-2xl overflow-hidden py-16 px-12 2xl:px-32 mb-32">
             <div class="w-8/12">
                 <div class="text-xl font-bold">
                     It’s as Easy as... One-Two-Three-Four
@@ -93,11 +94,23 @@
                     Every single day money will show up in your Spiffy account. First just a Little - but over time it will get bigger and bigger - and one day it may surprise you with how mush. Fermi have to do is pay your 55 a month to the YouTuhe Channely. like - and fork four.
                 </p>
             </div>
-            <img src="~/assets/images/downline-honeycomb.png" alt="Downline Honeycomb 22 1" style="height: 355px">
+            <div class="w-4/12">
+                <img
+                    src="~/assets/images/downline-honeycomb.png"
+                    alt="Downline Honeycomb 22 1"
+                    style="height: 355px"
+                    class="ml-4 mx-auto"
+                >
+            </div>
         </div>
 
-        <div class="flex justify-between mb-32">
-            <img src="~/assets/images/Rectangle 5.png" alt="Rectangle 5" style="height: 421px">
+        <div class="flex justify-between items-center mb-32">
+            <img
+                src="~/assets/images/Rectangle 5.png"
+                alt="Rectangle 5"
+                style="height: 421px"
+                class="mr-4"
+            >
             <div class="w-8/12">
                 <div class="text-xl font-bold">
                     It's a New Day - A Fresh Start

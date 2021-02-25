@@ -19,13 +19,19 @@
                     <li>Lake Oswego, Oregon - USA</li>
                 </ul>
                 <ul class="mt-6 custom-list">
-                    <li>Spiffer Support</li>
-                    <li>User Forums</li>
-                    <li>Corporate Page</li>
+                    <li class="my-1">
+                        Spiffer Support
+                    </li>
+                    <li class="my-1">
+                        User Forums
+                    </li>
+                    <li class="my-1">
+                        Corporate Page
+                    </li>
                 </ul>
 
                 <div class="mt-16">
-                    Built by - CorSource Technology Group LLC.
+                    <span class="font-lobster text-lg">Built by - </span> Technology Group LLC.
                     <img
                         src="~/assets/images/image-19.png"
                         alt="corsource-logo"

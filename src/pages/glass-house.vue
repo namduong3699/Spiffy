@@ -23,19 +23,19 @@
         <div class="flex justify-between">
             <div class="w-4/12 text-lg">
                 People in Viral Groups
-                <div class="py-6 mt-4 text-2xl bg-blue-light rounded-2xl text-center">
+                <div class="py-6 mt-4 text-2xl bg-blue-light rounded-2xl text-center font-bold">
                     7,829<span class="text-gray">/87,380</span>
                 </div>
             </div>
-            <div class="w-3/12 text-lg">
+            <div class="w-4/12 text-lg">
                 Percentage of Capacity Filled
-                <div class="py-6 mt-4 text-2xl bg-blue-light rounded-2xl text-center">
+                <div class="py-6 mt-4 text-2xl bg-blue-light rounded-2xl text-center font-bold">
                     3.93%
                 </div>
             </div>
             <div class="w-3/12 text-lg">
                 Total Account Balance
-                <div class="py-6 mt-4 text-2xl bg-blue-light rounded-2xl text-center text-blue-bold">
+                <div class="py-6 mt-4 text-2xl bg-blue-light rounded-2xl text-center text-blue-bold font-bold">
                     $962
                 </div>
             </div>
@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="mt-16 flex justify-around">
-            <div class="flex flex-col justify-center w-4/12 shadow-2xl rounded-2xl p-8">
+            <div class="w-5/12 flex flex-col justify-center w-4/12 shadow-2xl rounded-2xl p-8">
                 <nuxt-link to="community">
                     <img
                         src="~/assets/images/Ellipse 68.png"
@@ -106,7 +106,7 @@
                             <div class="text-gray">
                                 30 Day Viral Growth
                             </div>
-                            <div class="text-blue-bold">
+                            <div class="text-blue-bold font-bold">
                                 256
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                             <div class="text-gray">
                                 Tokens Earned
                             </div>
-                            <div class="text-blue-bold">
+                            <div class="text-blue-bold font-bold">
                                 $890
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                             <div class="text-gray">
                                 Fill % Increase
                             </div>
-                            <div class="text-blue-bold">
+                            <div class="text-blue-bold font-bold">
                                 +1.25%
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                             <div class="text-gray">
                                 Page Visitor
                             </div>
-                            <div class="text-blue-bold">
+                            <div class="text-blue-bold font-bold">
                                 22
                             </div>
                         </div>
@@ -143,7 +143,7 @@
                             <div class="text-gray">
                                 30 Day Viral Growth
                             </div>
-                            <div class="text-blue-bold">
+                            <div class="text-blue-bold font-bold">
                                 256
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                             <div class="text-gray">
                                 Tokens Earned
                             </div>
-                            <div class="text-blue-bold">
+                            <div class="text-blue-bold font-bold">
                                 $890
                             </div>
                         </div>
@@ -159,7 +159,7 @@
                             <div class="text-gray">
                                 Fill % Increase
                             </div>
-                            <div class="text-blue-bold">
+                            <div class="text-blue-bold font-bold">
                                 +1.25%
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                             <div class="text-gray">
                                 Page Visitor
                             </div>
-                            <div class="text-blue-bold">
+                            <div class="text-blue-bold font-bold">
                                 22
                             </div>
                         </div>

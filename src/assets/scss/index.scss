@@ -5,10 +5,19 @@
     src: url('./fonts/Ubuntu/Ubuntu-Regular.ttf');
 }
 
+@font-face {
+    font-family: Lobster;
+    src: url('./fonts/Lobster/Lobster-Regular.ttf');
+}
+
 .app {
     font-family: Ubuntu, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: $default;
     font-size: 18px;
+}
+
+.font-lobster {
+    font-family: Lobster;
 }
 
 .text-xs {
@@ -46,6 +55,14 @@
 
 .text-gold {
     color: #e7ad17;
+}
+
+.bg-gray-dark {
+    background-color: #2F303A;
+}
+
+.bg-gray-light {
+    background-color: #BABBBE;
 }
 
 @import "./custom.scss"

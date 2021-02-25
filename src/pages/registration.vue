@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex m-12">
+        <div class="flex xl:m-12">
             <div class="w-1/2 m-4 font-bold">
                 <div class="text-center text-lg mb-4">
                     Create your Free Account
@@ -24,10 +24,10 @@
                 <img
                     src="~/assets/images/study.png"
                     alt="study"
-                    style="height: 422px"
+                    style="height: 422px !important"
                     class="mx-auto"
                 >
-                <div class="text-lg mt-8 ml-48">
+                <div class="text-lg mt-8 ml-24 xl:ml-48">
                     <div>
                         No Obligation
                     </div>
@@ -66,7 +66,7 @@
                                 v-model="form.password"
                                 type="password"
                                 placeholder="password"
-                                class="my-2 shadow-lg"
+                                class="my-2 shadow-lg mr-1"
                             />
                         </el-form-item>
                         <el-form-item>
@@ -74,7 +74,7 @@
                                 v-model="form.cf_password"
                                 type="password"
                                 placeholder="confirm password"
-                                class="my-2 shadow-lg"
+                                class="my-2 shadow-lg ml-1"
                             />
                         </el-form-item>
                     </div>

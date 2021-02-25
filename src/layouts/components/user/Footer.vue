@@ -52,7 +52,7 @@
         <div class="flex">
             <div class="w-1/6" />
             <div class="w-5/6 flex flex-between items-center h-24">
-                <div class="w-1/2">
+                <div class="w-5/12">
                     <el-dropdown class="pr-6" @command="changeLang">
                         <span class="el-dropdown-link">
                             {{ getLangLabel }}<i class="el-icon-arrow-down el-icon--right font-bold pl-2" />
@@ -68,13 +68,13 @@
                         </el-dropdown-menu>
                     </el-dropdown>
 
-                    <i class="fab fa-twitter bg-twitter text-white rounded-full p-2 text-xs mx-2" />
-                    <i class="fab fa-facebook-f bg-facebook text-white rounded-full p-2 px-3 text-xs mx-2" />
-                    <i class="fab fa-youtube bg-youtube text-white rounded-full p-2 text-xs mx-2" />
-                    <i class="fab fa-linkedin-in bg-linkedin text-white rounded-full p-2 text-xs mx-2" />
+                    <i class="fab fa-twitter bg-twitter text-white rounded-full p-3 text-sm mx-2" />
+                    <i class="fab fa-facebook-f bg-facebook text-white rounded-full p-3 px-4 text-sm mx-2" />
+                    <i class="fab fa-youtube bg-youtube text-white rounded-full p-3 text-sm mx-2" />
+                    <i class="fab fa-linkedin-in bg-linkedin text-white rounded-full p-3 text-sm mx-2" />
                 </div>
-                <div class="w-1/2 text-right pr-8 text-lg">
-                    <span>Power by - </span>Corsource Technology Group LLC.
+                <div class="w-7/12 text-right pr-8 text-lg">
+                    <span class="font-lobster">Powered by - </span>Corsource Technology Group LLC.
                     <img
                         src="~/assets/images/image-19.png"
                         alt="corsource"
