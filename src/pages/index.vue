@@ -1,28 +1,47 @@
 <template>
-    <div>
-        <div>
-            <div>Get Started</div>
-            <div>About Spiffy</div>
-            <div>YouTube</div>
-            <div>How the Sausage is Made</div>
-            <div>
+    <div class="w-10/12 mx-auto">
+        <div class="flex justify-between font-bold">
+            <div class="flex justify-between pr-64 w-8/12">
+                <div>Get Started</div>
+                <div>About Spiffy</div>
+                <div>YouTube</div>
+                <div>How the Sausage is Made</div>
+            </div>
+            <div class="w-3/12">
                 <div>Login</div>
-                <el-input type="text" placeholder="email" />
+                <el-input type="text" placeholder="email" class="mb-2" />
                 <el-input type="text" placeholder="password" />
             </div>
         </div>
 
-        <div>
-            <div>Spiffy logo</div>
+        <div class="py-64">
+            <div class="flex">
+                <img
+                    src="~/assets/images/Polygon 1-1.png"
+                    alt="logo"
+                    style="height: 76px"
+                    class="mt-2 mr-2"
+                >
+                <div>
+                    <img src="~/assets/images/Spiffy-1.png" alt="logo" style="height: 120px">
+                    <div class="font-bold text-sm">
+                        Special Incentives For Funding YouTubers
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <img src="~/assets/images/image 1.png" alt="youtube">
-            <div>
-                <div>
+        <div class="flex justify-between mb-32">
+            <img
+                src="~/assets/images/image 1.png"
+                alt="youtube"
+                style="height: 273px"
+            >
+            <div class="w-8/12">
+                <div class="text-xl font-bold">
                     We fund YouTube Channels through Private Patron Danations
                 </div>
-                <p>
+                <p class="mb-4">
                     We use - Token Reward System-designed to compel "normal people" to donate money to their favorite Toe,. Channels. Spiffy Is he reardeal- you earn crwatotokens when you work Ow system -and it's possible to earn several hundred - if not - a few thousand dollars per month.
                 </p>
                 <p>
@@ -31,10 +50,10 @@
             </div>
         </div>
 
-        <div>
-            <div>
-                <div>
-                    It's as Easy as... One-Two-Three-Four
+        <div class="flex justify-between bg-gray rounded-2xl overflow-hidden py-16 px-32 mb-32">
+            <div class="w-8/12">
+                <div class="text-xl font-bold">
+                    It’s as Easy as... One-Two-Three-Four
                 </div>
                 <p>
                     First thing you do when you work Spiffy • is •you Pay $5 a month to a You.. Channel.
@@ -52,29 +71,33 @@
                     Every single day money will show up in your Spiffy account. First just a Little - but over time it will get bigger and bigger - and one day it may surprise you with how mush. Fermi have to do is pay your 55 a month to the YouTuhe Channely. like - and fork four.
                 </p>
             </div>
-            <img src="~/assets/images/downline-honeycomb.png" alt="Downline Honeycomb 22 1">
+            <img src="~/assets/images/downline-honeycomb.png" alt="Downline Honeycomb 22 1" style="height: 355px">
         </div>
 
-        <div>
-            <div>
-                <img src="~/assets/images/Rectangle 5.png" alt="Rectangle 5">
-                <div>
+        <div class="flex justify-between mb-32">
+            <img src="~/assets/images/Rectangle 5.png" alt="Rectangle 5" style="height: 421px">
+            <div class="w-8/12">
+                <div class="text-xl font-bold">
                     It's a New Day - A Fresh Start
                 </div>
-                <p>
+                <p class="mb-4">
                     Don't take Spiffy too seriously - it's a social media experiment. It's a unique new way to help crowdfund Touirube Channels - and you get a little something/something in return.
                 </p>
-                <p>
+                <p class="mb-4">
                     The principle behind the experiment Weaned quid Pro Quo.. an ancient principle which observes that if you want people to do- "something extraordinary" -tbey have to have a reward on their end to make it worth their time and effort. TouTube Channels want people to patron support them, and Spiffy has a business model that helps the channeis. and helps the givers too. When the givers are included in the benefit- donations wiLl increase exponentially because the end game is so compelling. Everyone benefits.
                 </p>
-                <p>
+                <p class="mb-4">
                     The goal of Spiffy is to create a fun environment for the Patron Subscribers - fostering a willingness to give •while supporting the TouTube Channels which create the content we love.
                 </p>
-                <div>
-                    <p>
-                        Fork Four - Do the math -See what you could do. The hints are all therein the above words - figure out how much you could make • if you get lucky.
+                <div class="flex">
+                    <p class="font-bold w-8/12">
+                        Fork Four - Do the math - See what you could do. The hints are all there in the above words - figure out how much you could make - if you get lucky.
                     </p>
-                    <img src="~/assets/images/image 42.png" alt="image 42">
+                    <img
+                        src="~/assets/images/image 42.png"
+                        alt="image 42"
+                        style="height: 42px"
+                    >
                 </div>
             </div>
         </div>
@@ -83,6 +106,12 @@
 
 <script>
     export default {
-        layout: 'guest',
+        layout: 'home',
     };
 </script>
+
+<style scoped>
+.bg-gray {
+    background: #f0f0f0;
+}
+</style>

@@ -11,6 +11,10 @@
     font-size: 18px;
 }
 
+.text-xs {
+    font-size: 10px;
+}
+
 .text-sm {
     font-size: 14px;
 }
@@ -27,6 +31,10 @@
     font-size: 48px;
 }
 
+.text-3xl {
+    font-size: 64px;
+}
+
 .text-link {
     text-decoration: none;
     color: $gray;
@@ -34,6 +42,10 @@
 
 .text-bold {
     color: $gray-bold;
+}
+
+.text-gold {
+    color: #e7ad17;
 }
 
 @import "./custom.scss"

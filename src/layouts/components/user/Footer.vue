@@ -4,22 +4,27 @@
             <div class="w-1/6 bg-gray-bold" />
             <div class="w-5/6 flex flex-col md:flex-row justify-between py-16 bg-gray-bold text-white">
                 <div class="w-full md:w-1/2 pr-24">
-                    <div class="mb-4">
-                        <img src="~/assets/images/Polygon 1.png" alt="logo">
-                        <img src="~/assets/images/Spiffy-white.png" alt="logo">
+                    <div class="flex items-center mb-4">
+                        <img
+                            src="~/assets/images/Polygon 1.png"
+                            alt="logo"
+                            style="height: 58px"
+                            class="mr-2"
+                        >
+                        <img src="~/assets/images/Spiffy-white.png" alt="logo" style="height: 67px">
                     </div>
-                    <p class="text-sm mb-4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, sint placeat assumenda praesentium consectetur debitis similique optio nobis fugit vitae fugiat aliquid delectus quas, voluptatem quaerat facere velit a deserunt eveniet officiis atque nihil. Placeat neque, minima adipisci debitis obcaecati quos doloremque quas ipsa itaque. Veritatis repellat recusandae suscipit omnis!
+                    <p class="mb-4">
+                        Disclaimer #1 - Spiffy is a social experiment. <span class="text-gold">The objective is to increase the percentage of financial donations to YouTube Channels</span> that bring excellent entertainment value - but are not compensated in a sustainable amount according to traditional values. The theory is - if you include the public in the financial benefit of the donation process - the number of donations will increase exponentially - thereby increasing the take by the channels as a whole.
                     </p>
-                    <p class="text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magnam hic modi ex dolor tempora ab maxime molestias repudiandae ducimus! In a optio magni explicabo eaque iure rerum. Error, mollitia aspernatur sit tenetur ullam nobis quisquam. Corrupti nam velit vel repellendus, voluptatibus nisi quas soluta ipsum? Ipsam, mollitia odio? Accusamus.
+                    <p class="mb-4">
+                        Disclaimer #2 - Spiffy is not a substitution for a job or education. It is not a retirement account. Spiffy is a $5 monthly donation to a YouTube Channel. If you cannot afford $5 a month - you should not participate - <span class="text-gold">there is no guarantee of reward</span> - play with the intention of helping others - be grateful if you are the recipiant of a financial reward as well.
                     </p>
                 </div>
                 <div class="w-full md:w-1/2">
-                    <div class="font-bold text-3xl">
+                    <div class="font-bold text-2xl">
                         Spiffy Essentials
                     </div>
-                    <ul class="font-bold pl-4">
+                    <ul class="font-bold pl-4 text-lg">
                         <li class="p-2">
                             <nuxt-link to="/">
                                 Understanding Youtube
@@ -53,8 +58,12 @@
                             {{ getLangLabel }}<i class="el-icon-arrow-down el-icon--right font-bold pl-2" />
                         </span>
                         <el-dropdown-menu slot="dropdown">
-                            <el-dropdown-item v-for="item in langs" :key="item.value" :command="item">
-                                {{ item.label }}
+                            <el-dropdown-item
+                                v-for="item in langs"
+                                :key="item.value"
+                                :command="item"
+                            >
+                                <span class="text-lg">{{ item.label }}</span>
                             </el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
@@ -64,9 +73,14 @@
                     <i class="fab fa-youtube bg-youtube text-white rounded-full p-2 text-xs mx-2" />
                     <i class="fab fa-linkedin-in bg-linkedin text-white rounded-full p-2 text-xs mx-2" />
                 </div>
-                <div class="w-1/2 text-right pr-8">
+                <div class="w-1/2 text-right pr-8 text-lg">
                     <span>Power by - </span>Corsource Technology Group LLC.
-                    <img src="~/assets/images/image-19.png" alt="corsource">
+                    <img
+                        src="~/assets/images/image-19.png"
+                        alt="corsource"
+                        style="height: 51px"
+                        class="inline ml-2"
+                    >
                 </div>
             </div>
         </div>

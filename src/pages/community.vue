@@ -1,16 +1,21 @@
 <template>
     <div class="m-12 w-9/12 mx-auto font-bold">
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center">
             <div class="flex justify-center items-center">
                 <div class="text-center">
-                    <div>
-                        <img src="~/assets/images/Polygon 1.png" alt="logo">
-                        <img src="~/assets/images/Spiffy.png" alt="logo">
+                    <div class="flex items-center">
+                        <img
+                            src="~/assets/images/Polygon 1.png"
+                            alt="logo"
+                            style="height: 60px"
+                            class="mr-2"
+                        >
+                        <img src="~/assets/images/Spiffy-1.png" alt="logo" style="height: 87px">
                     </div>
-                    <div class="text-3xl">
+                    <div class="text-xl">
                         clackacoug
                     </div>
-                    <div class="text-3xl">
+                    <div class="text-xl">
                         B-JW6-RL9-BA2
                     </div>
                 </div>
@@ -18,47 +23,136 @@
                     src="~/assets/images/Ellipse 68.png"
                     class="rounded-full mx-auto mb-8 ml-6"
                     alt="avatar"
-                    width="200"
+                    style="height: 250px"
                 >
             </div>
             <div class="flex items-center">
                 <img
-                    src="~/assets/images/image 34.png"
+                    src="~/assets/images/image 33.png"
                     alt="logo"
-                    class="w-40 h-40"
+                    style="height: 160px"
                 >
                 <img
-                    src="~/assets/images/image 34.png"
+                    src="~/assets/images/image 31.png"
                     class="ml-4 w-40 h-40"
                     alt="logo"
+                    style="height: 160px"
                 >
             </div>
         </div>
 
         <div>
-            <div class="mt-48 uppercase text-3xl text-center">
+            <div class="mt-48 uppercase text-xl text-center">
                 Current month - combined viral growth stastics - one column
             </div>
-            <div v-for="index in 4" :key="index" class="mt-10">
+            <div class="mt-10">
                 <div class="capitalize text-gray-700 text-lg">
-                    Total possible viral group people
+                    Total Possible Viral Group People
                 </div>
-                <div class="flex justify-around p-4 rounded-lg shadow-lg text-lg">
-                    <div v-for="item in 8" :key="item" class="flex flex-col">
-                        <div class="flex">
+                <div class="flex justify-around items-center p-4 rounded-lg shadow-lg text-lg">
+                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
+                        <div class="flex items-center">
                             <div class="text-xs font-normal mr-1">
                                 {{ index }}
                             </div>
                             <img
                                 src="~/assets/images/Polygon 5.png"
                                 alt="logo"
+                                style="height: 14px"
                             >
                         </div>
                         <div class="mt-3">
                             {{ Math.floor(Math.random()*100) }}
                         </div>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col justify-between items-center">
+                        <div>Total</div>
+                        <div class="mt-3">
+                            {{ Math.floor(Math.random()*100) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="capitalize text-gray-700 text-lg">
+                    Your Actual Viral Group People
+                </div>
+                <div class="flex justify-around items-center p-4 rounded-lg shadow-lg text-lg">
+                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
+                        <div class="flex items-center">
+                            <div class="text-xs font-normal mr-1">
+                                {{ index }}
+                            </div>
+                            <img
+                                src="~/assets/images/Polygon 5.png"
+                                alt="logo"
+                                style="height: 14px"
+                            >
+                        </div>
+                        <div class="mt-3">
+                            {{ Math.floor(Math.random()*100) }}
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between items-center">
+                        <div>Total</div>
+                        <div class="mt-3">
+                            {{ Math.floor(Math.random()*100) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="capitalize text-gray-700 text-lg">
+                    Percentage of each level filled
+                </div>
+                <div class="flex justify-around items-center p-4 rounded-lg shadow-lg text-lg">
+                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
+                        <div class="flex items-center">
+                            <div class="text-xs font-normal mr-1">
+                                {{ index }}
+                            </div>
+                            <img
+                                src="~/assets/images/Polygon 5.png"
+                                alt="logo"
+                                style="height: 14px"
+                            >
+                        </div>
+                        <div class="mt-3">
+                            {{ Math.floor(Math.random()*100) }}
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between items-center">
+                        <div>Total</div>
+                        <div class="mt-3">
+                            {{ Math.floor(Math.random()*100) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="capitalize text-gray-700 text-lg">
+                    Token Rewards per each level - listed in actual value of your local denomination
+                </div>
+                <div class="flex justify-around items-center p-4 rounded-lg shadow-lg text-lg">
+                    <div v-for="index in 8" :key="index" class="flex flex-col justify-between">
+                        <div class="flex items-center">
+                            <div class="text-xs font-normal mr-1">
+                                {{ index }}
+                            </div>
+                            <img
+                                src="~/assets/images/Polygon 5.png"
+                                alt="logo"
+                                style="height: 14px"
+                            >
+                        </div>
+                        <div class="mt-3">
+                            {{ Math.floor(Math.random()*100) }}
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between items-center">
                         <div>Total</div>
                         <div class="mt-3">
                             {{ Math.floor(Math.random()*100) }}

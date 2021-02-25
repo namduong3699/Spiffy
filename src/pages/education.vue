@@ -1,21 +1,33 @@
 <template>
-    <div class="flex justify-center m-12 font-bold">
-        <div class="w-8/12 pt-12">
-            <div class="text-3xl font-bold">
+    <div class="w-full flex justify-center m-12 font-bold">
+        <div class="pt-12">
+            <div class="text-xl font-bold">
                 Spiffy - Special Incentives for Funding YouTubes
             </div>
             <ul class="mt-8">
-                <li class="my-4">
-                    <img src="~/assets/images/image 38.png">Article One - The Basics of Spiffy
+                <li class="flex items-center my-4">
+                    <img src="~/assets/images/image 38.png" class="mr-8" style="height: 30px">
+                    <div>
+                        Article One - The Basics of Spiffy
+                    </div>
                 </li>
-                <li class="my-4">
-                    <img src="~/assets/images/image 39.png">Article Two - Youtube Side of the Equation
+                <li class="flex items-center my-4">
+                    <img src="~/assets/images/image 39.png" class="mr-8" style="height: 30px">
+                    <div>
+                        Article Two - Youtube Side of the Equation
+                    </div>
                 </li>
-                <li class="my-4">
-                    <img src="~/assets/images/image 40.png">Article Three - UNderstanding the columns and the need for them
+                <li class="flex items-center my-4">
+                    <img src="~/assets/images/image 40.png" class="mr-8" style="height: 30px">
+                    <div>
+                        Article Three - UNderstanding the columns and the need for them
+                    </div>
                 </li>
-                <li class="my-4">
-                    <img src="~/assets/images/image 41.png">Article Four - FAQ's - This answers a lot of questions
+                <li class="flex items-center my-4">
+                    <img src="~/assets/images/image 41.png" class="mr-8" style="height: 30px">
+                    <div>
+                        Article Four - FAQ's - This answers a lot of questions
+                    </div>
                 </li>
             </ul>
             <div class="mt-24">
@@ -23,11 +35,16 @@
             </div>
             <div class="flex justify-start mt-8">
                 <div v-for="index in 4" :key="index" class="video-item mr-4 px-2 py-1 text-center border-2 border-black">
-                    <div>
-                        <img src="~/assets/images/Polygon 1.png" alt="video">
-                        <img src="~/assets/images/Spiffy.png" alt="video">
+                    <div class="flex items-center">
+                        <img
+                            src="~/assets/images/Polygon 1.png"
+                            alt="video"
+                            style="height: 26px"
+                            class="mr-1"
+                        >
+                        <img src="~/assets/images/Spiffy.png" alt="video" style="height: 35px">
                     </div>
-                    <span class="text-sm">Video #{{ index }}</span>
+                    <span>Video #{{ index }}</span>
                 </div>
             </div>
         </div>
@@ -36,7 +53,7 @@
                 src="~/assets/images/image 37.png"
                 class="rounded-full mx-auto mb-8"
                 alt="avatar"
-                width="150"
+                style="height: 280px; width: 260px"
             >
         </div>
     </div>
