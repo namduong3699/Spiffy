@@ -49,6 +49,7 @@ export default {
         '~/plugins/components',
         '~/plugins/directives',
         '~/plugins/element-ui',
+        '~/plugins/filters',
     ],
 
     // Auto import components (https://go.nuxtjs.dev/config-components)

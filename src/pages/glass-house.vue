@@ -14,7 +14,7 @@
                 Glass house
             </div>
             <div class="flex items-center py-4 px-12 ml-12 shadow-xl rounded-2xl text-2xl">
-                <img src="~/assets/images/coolicon.png" style="height: 48px"><span class="text-red-bold font-bold ml-2"> 2</span>
+                <img src="~/assets/images/coolicon.png" style="height: 48px"><span class="text-red-bold font-bold ml-2"> {{ randomInt(10) }}</span>
             </div>
         </div>
         <div class="my-12 p-6 text-lg rounded-2xl bg-gray-light">
@@ -24,19 +24,19 @@
             <div class="w-4/12 text-lg">
                 People in Viral Groups
                 <div class="py-6 mt-4 text-2xl bg-blue-light rounded-2xl text-center font-bold">
-                    7,829<span class="text-gray">/87,380</span>
+                    {{ randomInt(7) }},{{ randomInt(829) }}<span class="text-gray">/{{ randomInt(87) }},{{ randomInt(380) }}</span>
                 </div>
             </div>
             <div class="w-4/12 text-lg">
                 Percentage of Capacity Filled
                 <div class="py-6 mt-4 text-2xl bg-blue-light rounded-2xl text-center font-bold">
-                    3.93%
+                    3.{{ randomInt(93) }}%
                 </div>
             </div>
             <div class="w-3/12 text-lg">
                 Total Account Balance
                 <div class="py-6 mt-4 text-2xl bg-blue-light rounded-2xl text-center text-blue-bold font-bold">
-                    $962
+                    ${{ randomInt(962) }}
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
             <div class="w-5/12 flex flex-col justify-center w-4/12 shadow-2xl rounded-2xl p-8">
                 <nuxt-link to="community">
                     <img
-                        src="~/assets/images/Ellipse 68.png"
+                        :src="hasData ? `/_nuxt/src/assets/images/avatar/${data.screenName.length % 4}.png` : '/_nuxt/src/assets/images/Ellipse 68.png'"
                         class="rounded-full mx-auto mb-8"
                         alt="avatar"
                         style="height: 200px"
@@ -64,13 +64,13 @@
                 </nuxt-link>
                 <div class="text-center text-lg">
                     <div class="mb-5">
-                        clackacoug
+                        {{ data.screenName || 'clackacoug' }}
                     </div>
                     <div class="mb-5">
-                        B-JW6-RL9-BA2
+                        {{ data.sponsorCode || 'B-JW6-RL9-BA2' }}
                     </div>
                     <div class="mb-5">
-                        Join Date - Jan 15, 2020
+                        Join Date - <span v-if="hasData">{{ data.joinedAt | formatDate }}</span><span v-else>Jan 15, 2020</span>
                     </div>
                     <div class="mb-5">
                         Clackamas, Oregon
@@ -87,7 +87,9 @@
                     <div class="mb-5">
                         Total Career Amount Donated
                     </div>
-                    <div>$230</div>
+                    <div>
+                        ${{ randomInt(230) }}
+                    </div>
                 </div>
             </div>
             <div class="w-5/12 text-lg">
@@ -107,7 +109,7 @@
                                 30 Day Viral Growth
                             </div>
                             <div class="text-blue-bold font-bold">
-                                256
+                                {{ randomInt(256) }}
                             </div>
                         </div>
                         <div class="py-2">
@@ -115,7 +117,7 @@
                                 Tokens Earned
                             </div>
                             <div class="text-blue-bold font-bold">
-                                $890
+                                ${{ randomInt(890) }}
                             </div>
                         </div>
                         <div class="py-2">
@@ -123,7 +125,7 @@
                                 Fill % Increase
                             </div>
                             <div class="text-blue-bold font-bold">
-                                +1.25%
+                                +1.{{ randomInt(25) }}%
                             </div>
                         </div>
                         <div class="py-2">
@@ -131,7 +133,7 @@
                                 Page Visitor
                             </div>
                             <div class="text-blue-bold font-bold">
-                                22
+                                {{ randomInt(22) }}
                             </div>
                         </div>
                     </div>
@@ -144,7 +146,7 @@
                                 30 Day Viral Growth
                             </div>
                             <div class="text-blue-bold font-bold">
-                                256
+                                {{ randomInt(256) }}
                             </div>
                         </div>
                         <div class="py-2">
@@ -152,7 +154,7 @@
                                 Tokens Earned
                             </div>
                             <div class="text-blue-bold font-bold">
-                                $890
+                                ${{ randomInt(890) }}
                             </div>
                         </div>
                         <div class="py-2">
@@ -160,7 +162,7 @@
                                 Fill % Increase
                             </div>
                             <div class="text-blue-bold font-bold">
-                                +1.25%
+                                +1.{{ randomInt(25) }}%
                             </div>
                         </div>
                         <div class="py-2">
@@ -168,7 +170,7 @@
                                 Page Visitor
                             </div>
                             <div class="text-blue-bold font-bold">
-                                22
+                                {{ randomInt(22) }}
                             </div>
                         </div>
                     </div>
@@ -192,6 +194,7 @@
 </template>
 
 <script>
+    import { mapState } from 'vuex';
     import { list } from '~/data/data';
 
     export default {
@@ -199,6 +202,20 @@
 
         data() {
             return { list };
+        },
+
+        computed: {
+            ...mapState('user', ['data']),
+
+            hasData() {
+                return this.data.email !== null;
+            },
+        },
+
+        methods: {
+            randomInt(value) {
+                return this.hasData ? Math.floor(Math.random() * value) : value;
+            },
         },
     };
 </script>

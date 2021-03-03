@@ -13,15 +13,15 @@
                         <img src="~/assets/images/Spiffy-1.png" alt="logo" style="height: 87px">
                     </div>
                     <div class="text-xl">
-                        clackacoug
+                        {{ data.screenName || 'clackacoug' }}
                     </div>
                     <div class="text-xl">
-                        B-JW6-RL9-BA2
+                        {{ data.sponsorCode || 'B-JW6-RL9-BA2' }}
                     </div>
                 </div>
                 <nuxt-link to="/glass-house">
                     <img
-                        src="~/assets/images/Ellipse 68.png"
+                        :src="hasData ? `/_nuxt/src/assets/images/avatar/${data.screenName.length % 4}.png` : '/_nuxt/src/assets/images/Ellipse 68.png'"
                         class="rounded-full mx-auto mb-8 ml-6"
                         alt="avatar"
                         style="height: 250px"
@@ -167,6 +167,7 @@
 </template>
 
 <script>
+    import { mapState } from 'vuex';
     import { list } from '~/data/data';
 
     export default {
@@ -174,6 +175,20 @@
 
         data() {
             return { list };
+        },
+
+        computed: {
+            ...mapState('user', ['data']),
+
+            hasData() {
+                return this.data.email !== null;
+            },
+        },
+
+        methods: {
+            randomInt(value) {
+                return this.hasData ? Math.floor(Math.random() * value) : value;
+            },
         },
     };
 </script>

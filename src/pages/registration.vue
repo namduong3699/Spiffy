@@ -49,13 +49,13 @@
                 <el-form ref="form" class="mt-16" :model="form">
                     <el-form-item>
                         <el-input
-                            v-model="form.code"
+                            v-model="form.sponsorCode"
                             placeholder="Enter your Sponsor’s Code - if no code - leave blank - computer will assign"
                             class="my-2 shadow-lg"
                         />
                     </el-form-item>
                     <el-form-item>
-                        <el-input v-model="form.screen" placeholder="Choose a screen name - be clever" class="my-2 shadow-lg" />
+                        <el-input v-model="form.screenName" placeholder="Choose a screen name - be clever" class="my-2 shadow-lg" />
                     </el-form-item>
                     <el-form-item>
                         <el-input v-model="form.email" placeholder="Email address or phone number" class="my-2 shadow-lg" />
@@ -71,7 +71,7 @@
                         </el-form-item>
                         <el-form-item>
                             <el-input
-                                v-model="form.cf_password"
+                                v-model="form.passwordCf"
                                 type="password"
                                 placeholder="confirm password"
                                 class="my-2 shadow-lg ml-1"
@@ -81,7 +81,7 @@
                     <el-form-item>
                         <el-input v-model="form.terms" placeholder="Terms and Conditions" class="my-2 shadow-lg" />
                     </el-form-item>
-                    <el-button plain class="my-2 shadow-lg">
+                    <el-button plain class="my-2 shadow-lg" @click="onSubmit">
                         Submit
                     </el-button>
                 </el-form>
@@ -91,20 +91,31 @@
 </template>
 
 <script>
+    import { mapState, mapGetters } from 'vuex';
+
     export default {
         layout: 'default',
 
         data() {
             return {
                 form: {
-                    code: '',
-                    screen: '',
+                    sponsorCode: '',
+                    screenName: '',
                     email: '',
                     password: '',
-                    cf_password: '',
+                    passwordCf: '',
                     terms: '',
                 },
+                data: null,
             };
+        },
+
+        methods: {
+            onSubmit() {
+                this.$store.dispatch('user/changeData', this.form).then(() => {
+                    this.$router.push('/glass-house');
+                });
+            },
         },
     };
 </script>
